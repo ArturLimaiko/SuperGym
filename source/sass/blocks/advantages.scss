@@ -5,11 +5,12 @@
 
   @media (max-width: ($vp-1024 - 1px)) {
     padding-top: 93px;
-    padding-bottom: 68px;
+    padding-bottom: 98px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
     padding-top: 96px;
+    padding-bottom: 69px;
   }
 
   &__inner {

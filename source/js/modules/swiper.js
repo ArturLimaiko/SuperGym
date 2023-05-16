@@ -1,7 +1,10 @@
 const initSlider = () => {
   const swiper = new Swiper('.swiper', {
     // Optional parameters
-    loop: true,
+    loop: false,
+    slidesPerView: 'auto',
+    spaceBetween: 60,
+    autoHeight: true,
 
     // Navigation arrows
     navigation: {
