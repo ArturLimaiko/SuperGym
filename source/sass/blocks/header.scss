@@ -1,0 +1,62 @@
+.header {
+  margin-top: 30px;
+
+  @media (max-width: ($vp-1024 - 1px)) {
+    margin-top: 34px;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    margin-top: 15px;
+  }
+
+  &__logo {
+    fill: $color-default-white;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      width: 82px;
+      height: 17px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      width: 69px;
+      height: 24px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -34px;
+  }
+
+  &__nav a {
+    display: block;
+    color: $color-default-white;
+    font-family: $ff-Alumni;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    max-width: 154px;
+    z-index: 2;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      font-size: 20px;
+    }
+
+    @include hover-focus {
+      opacity: 0.7;
+    }
+
+    @include active {
+      opacity: 0.5;
+    }
+  }
+}

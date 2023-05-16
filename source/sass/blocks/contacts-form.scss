@@ -1,0 +1,41 @@
+.contacts-form {
+  position: relative;
+  min-height: 337px;
+  background: linear-gradient(
+    90deg,
+    $color-sapphire 0,
+    $color-sapphire 50%,
+    $color-default-white 50%,
+    $color-default-white 100%
+  );
+  overflow-x: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 49.9%;
+    height: 1px;
+    display: block;
+    background-color: $color-light-slay-grey;
+  }
+
+  @media (max-width: ($vp-1024 - 1px)) {
+    background: transparent;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      padding: 0;
+      grid-template-columns: 1fr;
+    }
+  }
+}

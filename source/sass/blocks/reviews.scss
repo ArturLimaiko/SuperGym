@@ -1,0 +1,123 @@
+.reviews {
+  padding-top: 2px;
+  padding-bottom: 82px;
+
+  @media (max-width: ($vp-1024 - 1px)) {
+    padding-top: 43px;
+    padding-bottom: 62px;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    padding-top: 36px;
+    padding-bottom: 31px;
+  }
+
+  h2 {
+    @include title-h2;
+
+    font-size: 54px;
+    line-height: 65px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding-left: 4px;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      transform: translateX(-4px);
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+}
+
+.reviews__slider {
+  position: relative;
+  box-sizing: border-box;
+  width: 675px;
+  margin: 0 auto;
+  padding: 37px;
+
+  @media (max-width: ($vp-1024 - 1px)) {
+    width: 100%;
+    padding: 40px 80px;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    padding: 42px 48px 40px 48px;
+  }
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.reviews__item {
+  width: 100%;
+}
+
+.reviews__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  top: 0;
+  width: 26px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: $color-dark-gray;
+  opacity: 1;
+  background-color: transparent;
+
+  svg {
+    width: 26px;
+    height: 32px;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    width: 15px;
+    height: 100%;
+    top: 0;
+  }
+
+  &--prev {
+    left: 0;
+
+    svg {
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      left: 40px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      left: 15px;
+    }
+  }
+
+  &--next {
+    right: 0;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      right: 40px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      right: 15px;
+    }
+  }
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+    filter: drop-shadow(0 0 3px $color-resolution-blue);
+  }
+}

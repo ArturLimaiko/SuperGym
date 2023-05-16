@@ -1,0 +1,296 @@
+.abonements {
+  padding-top: 116px;
+  background-color: $color-ghost-white;
+  padding-bottom: 119px;
+  position: relative;
+
+  @media (max-width: ($vp-1024 - 1px)) {
+    padding-top: 101px;
+    padding-bottom: 101px;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    padding-top: 64px;
+    padding-bottom: 70px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: image-set(
+      url("../img/disk-gym.webp") 1x,
+      url("../img/disk-gym.png") 1x,
+      url("../img/disk-gym@2x.webp") 2x,
+      url("../img/disk-gym@2x.png") 2x
+    );
+    width: 286px;
+    height: 420px;
+    right: 0;
+    bottom: -76px;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      background: image-set(
+        url("../img/disk-gym-tablet.webp") 1x,
+        url("../img/disk-gym-tablet@2x.png") 1x,
+        url("../img/disk-gym-tablet@2x.webp") 2x,
+        url("../img/disk-gym-tablet@2x.png") 2x
+      );
+      width: 347px;
+      height: 420px;
+      bottom: -82px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      display: none;
+    }
+  }
+
+  h2 {
+    @include title-h2;
+
+    font-size: 54px;
+    line-height: 65px;
+    margin: 0;
+    text-align: center;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      font-size: 42px;
+      line-height: 50px;
+      padding-right: 14px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  &__keys {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 47px;
+    border-bottom: 2px solid $color-gray;
+    margin: 0 auto;
+    width: 346px;
+    padding: 0;
+    padding-top: 8px;
+
+    @media (max-width: ($vp-768 - 1px)) {
+      width: 290px;
+      gap: 43px;
+      padding: 12px 0 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 0;
+    border: none;
+    background-color: transparent;
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $color-sapphire-transparent;
+    cursor: pointer;
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @include hover-focus {
+      color: $color-crimson;
+      outline: none;
+    }
+
+    @include active {
+      color: $color-sapphire;
+    }
+
+    &.is-active {
+      color: $color-sapphire;
+      border-bottom: 2px solid $color-crimson;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 37px;
+    justify-content: center;
+    z-index: 1;
+
+    @media (max-width: ($vp-1280 - 1px)) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: ($vp-1024 - 1px)) {
+      display: flex;
+      flex-direction: column;
+      padding-top: 41px;
+    }
+  }
+
+  &__element {
+    @media (max-width: ($vp-1280 - 1px)) {
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: ($vp-1024 - 1px)) {
+        justify-content: center;
+      }
+    }
+  }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 448px;
+      background-color: $color-default-white;
+      justify-content: flex-start;
+      border: 7px solid $color-default-white;
+
+      @media (max-width: ($vp-1280 - 1px)) {
+        min-width: 300px;
+      }
+
+      @media (max-width: ($vp-1024 - 1px)) {
+        width: 442px;
+      }
+
+      @media (max-width: ($vp-768 - 1px)) {
+        min-height: 378px;
+        width: 290px;
+      }
+
+      // Hover&focus&active
+      @include hover-focus {
+        border: 7px solid transparent;
+        border-image: linear-gradient(151deg, #ed0233 17.6%, #003eb7 95.31%);
+        border-image-slice: 7;
+        outline: 0;
+      }
+
+      @include active {
+        opacity: 0.7;
+      }
+    }
+
+    & h3 {
+      @include title-h3;
+
+      font-size: 26px;
+      line-height: 40px;
+      padding-top: 51px;
+      text-align: center;
+
+      @media (max-width: ($vp-768 - 1px)) {
+        font-size: 22px;
+        line-height: 24px;
+        padding-top: 37px;
+      }
+    }
+
+    & p {
+      font-family: $ff-roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $color-sapphire;
+      margin: 0;
+      text-align: center;
+      padding-top: 5px;
+
+      @media (max-width: ($vp-768 - 1px)) {
+        padding-top: 8px;
+      }
+    }
+
+    & span {
+      position: relative;
+      display: inline-block;
+      font-family: $ff-roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 90px;
+      z-index: 1;
+      color: $color-sapphire;
+      padding-top: 63px;
+      padding-left: 4px;
+      text-align: center;
+
+      @media (max-width: ($vp-768 - 1px)) {
+        font-size: 48px;
+        line-height: 72px;
+        padding-top: 53px;
+        padding-left: 6px;
+      }
+
+      &::before {
+        position: absolute;
+        content: attr(data-price);
+        font-family: $ff-roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 150px;
+        color: $color-whisper;
+        opacity: 0.47;
+        top: 11px;
+        right: 4px;
+        z-index: -1;
+
+        @media (max-width: ($vp-768 - 1px)) {
+          font-size: 80px;
+          line-height: 120px;
+          right: 23px;
+        }
+      }
+    }
+
+    & strong {
+      color: $color-egyptian-blue;
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__btn {
+      @include button;
+
+      text-transform: uppercase;
+      padding: 24px 51px 24px 37px;
+      letter-spacing: 0.05em;
+      border: 2px solid $color-resolution-blue;
+      margin-top: 36px;
+
+      @media (max-width: ($vp-768 - 1px)) {
+        margin-top: 31px;
+      }
+
+      @include hover-focus {
+        border: 2px solid #ed0233;
+        color: #ed0233;
+      }
+    }
+  }
