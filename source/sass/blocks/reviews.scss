@@ -4,7 +4,7 @@
 
   @media (max-width: ($vp-1024 - 1px)) {
     padding-top: 43px;
-    padding-bottom: 62px;
+    padding-bottom: 18px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
@@ -82,10 +82,13 @@
     height: 32px;
   }
 
+  @media (max-width: ($vp-1024 - 1px)) {
+    top: -22px;
+  }
+
   @media (max-width: ($vp-768 - 1px)) {
     width: 15px;
     height: 100%;
-    top: 0;
   }
 
   &--prev {

@@ -3,6 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initVideos} from './modules/video';
 import {initSlider} from './modules/swiper';
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
