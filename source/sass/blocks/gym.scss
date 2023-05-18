@@ -2,7 +2,7 @@
   padding-top: 120px;
   padding-bottom: 10px;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
     padding-top: 100px;
     padding-bottom: 16px;
   }
@@ -19,7 +19,7 @@
   column-gap: 85px;
   row-gap: 0;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
     grid-template-columns: 1fr;
   }
 
@@ -35,7 +35,7 @@
   grid-column: 1/2;
   grid-row: 1/4;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
     grid-column: 1/-1;
     grid-row: 1/2;
     padding: 0;
@@ -56,7 +56,7 @@
 
     margin-bottom: 6px;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       font-size: 42px;
       line-height: 50px;
       text-align: center;
@@ -85,7 +85,7 @@
     line-height: 150%;
     color: $color-sapphire;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       text-align: center;
       margin-bottom: 35px;
     }
@@ -105,7 +105,7 @@
     line-height: 24px;
     color:$color-sapphire;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       max-width: 510px;
       margin: 0 auto;
       text-align: center;
@@ -128,7 +128,7 @@
   place-self: start start;
   background-color: $color-dark-gray;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
     grid-column: 1/-1;
     grid-row: 2/3;
     max-width: none;
@@ -158,7 +158,7 @@
   transform: translateY(-50%) translateX(11%);
   background-color: $color-spindle;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
     width: 39.2%;
     grid-column: 1/-1;
     grid-row: 3/4;
@@ -227,7 +227,7 @@
     transform: translateX(2px);
   }
 
-  @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
     width: 52px;
     height: 52px;
 
@@ -261,7 +261,7 @@
 
     transform: translate(-50%, -50%);
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       width: 73px;
       height: 73px;
       /* stylelint-disable-next-line */

@@ -5,7 +5,7 @@
   padding: 56px 0 30px 16px;
   place-self: center end;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
     place-self: start center;
     max-width: none;
     width: 100%;
@@ -23,7 +23,7 @@
 
     margin: 3px 0 37px;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       width: 74%;
       margin: 0 auto;
       margin-bottom: 32px;
@@ -51,7 +51,7 @@
   column-gap: 21.9%;
   row-gap: 11px;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
     grid-template-columns: 1.2fr 1fr;
     width: 74%;
     margin: 0 auto;
@@ -74,7 +74,7 @@
     height: 84%;
     background-color: $color-light-slay-grey;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       left: 53%;
       top: 8px;
       height: 87%;
@@ -91,7 +91,7 @@
   padding: 0;
   padding-left: 4px;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
     padding-left: 0;
   }
 
@@ -108,7 +108,7 @@
     font-size: 16px;
     line-height: 150%;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       font-size: 20px;
     }
   }
@@ -123,7 +123,7 @@
     font-size: 14px;
     line-height: 21px;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       font-size: 18px;
       line-height: 152.34%;
     }

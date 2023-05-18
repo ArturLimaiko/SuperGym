@@ -5,7 +5,7 @@
   background-color: $color-sapphire;
   color: $color-default-white;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
     place-self: start center;
     width: 100%;
     padding: 62px 45px 68px 45px;
@@ -24,7 +24,7 @@
     line-height: 156%;
     color: $color-default-white;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       width: 75%;
       margin: 0 auto;
       margin-bottom: 26px;
@@ -49,7 +49,7 @@
     row-gap: 28px;
     max-width: 410px;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       max-width: none;
       width: 74%;
       padding-right: 30px;
@@ -90,7 +90,7 @@
     }
 
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       padding-top: 18px;
     }
 
@@ -113,7 +113,7 @@
     transition: $trans-default;
     transition-property: top;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       line-height: 18px;
     }
   }

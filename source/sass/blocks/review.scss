@@ -11,7 +11,7 @@
   color: $color-default-white;
   box-shadow: 0 0 40px rgba($color-resolution-blue, 0.2);
 
-  @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
     width: 93%;
     padding: 54px 60px 50px 65px;
   }

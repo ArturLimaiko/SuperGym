@@ -8,7 +8,7 @@
     padding-top: 45px;
     padding-bottom: 26px;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       padding-bottom: 37px;
     }
 
@@ -32,7 +32,7 @@
     display: flex;
     gap: 40px;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       gap: 30px;
     }
 
@@ -72,7 +72,7 @@
     &--logo {
       padding-right: 120px;
 
-      @media (max-width: ($vp-1024 - 1px)) {
+        @media (max-width: ($vp-1200 - 1px)) {
         padding: 0;
       }
     }
@@ -81,7 +81,7 @@
       padding-left: 118px;
     }
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       &--one {
         padding-left: 0;
       }
@@ -136,9 +136,11 @@
   }
 
   &__logo svg {
+    width: 88px;
+    height: 32px;
     fill: $color-default-white;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
       margin-right: 30px;
       margin-top: 4px;
       width: 82px;
