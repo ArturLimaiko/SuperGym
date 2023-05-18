@@ -242,6 +242,10 @@
     background-color: $color-royal-blue;
 
     @media (max-width: ($vp-768 - 1px)) {
+      height: auto;
+    }
+
+    @media (max-width: ($vp-375 - 1px)) {
       height: 299px;
     }
   }

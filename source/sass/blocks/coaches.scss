@@ -1,19 +1,41 @@
 .coaches {
   padding-top: 108px;
-  padding-bottom: 143px;
+  padding-bottom: 139px;
 }
 
 .coaches__container {
   position: relative;
 }
 
+.coaches__button-prev,
+.coaches__button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  top: 14%;
+  width: 26px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: $color-dark-gray;
+  opacity: 1;
+  background-color: transparent;
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+    filter: drop-shadow(0 0 3px $color-resolution-blue);
+  }
+}
+
 .coaches__button-prev {
-  left: -57px;
-  right: auto;
+  transform: rotate(180deg);
+  left: -60px;
 }
 
 .coaches__button-next {
-  right: -57px;
+  right: -60px;
   left: auto;
 }
 
@@ -44,7 +66,6 @@
     justify-content: flex-start;
     flex-direction: column;
     background-color: $color-sapphire-transparent-strong;
-    overflow: scroll;
     min-height: 294px;
   }
 
@@ -97,7 +118,7 @@
   justify-content: center;
   z-index: 1;
   width: 100%;
-  padding: 54px 42px 24px 42px;
+  padding: 49px 42px 24px 42px;
   min-height: 294px;
   align-items: flex-end;
 }
@@ -147,39 +168,6 @@
   color: $color-spindle;
 }
 
-@media (max-width: 1919px) {
-  .coaches__button-prev,
-  .coaches__button-next {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    top: 14%;
-    width: 26px;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border: none;
-    color: $color-dark-gray;
-    opacity: 1;
-    background-color: transparent;
-
-    @include hover-focus {
-      color: $color-resolution-blue;
-      filter: drop-shadow(0 0 3px $color-resolution-blue);
-    }
-  }
-
-  .coaches__button-prev {
-    transform: rotate(180deg);
-    left: -60px;
-  }
-
-  .coaches__button-next {
-    right: -60px;
-  }
-}
-
 @media (max-width: ($vp-1440 - 1px)) {
   .coaches__container {
     padding: 0;
@@ -196,7 +184,7 @@
 
 @media (max-width: ($vp-1280 - 1px)) {
   .coaches__container {
-    padding: 0 10px;
+    padding: 0 30px;
   }
 
   .coaches__item:focus-visible .coaches__box,
@@ -205,16 +193,11 @@
   }
 
   .coaches__button-prev {
-    left: -20px;
+    left: 0;
   }
 
   .coaches__button-next {
-    right: -20px;
-  }
-
-  .coaches__button-prev,
-  .coaches__button-next {
-    top: 59%;
+    right: 0;
   }
 }
 
@@ -266,11 +249,11 @@
 @media (max-width: ($vp-768 - 1px)) {
   .coaches {
     padding-bottom: 70px;
-    padding-top: 66px;
+    padding-top: 62px;
   }
 
   .coaches__box {
-    padding: 44px 22px 24px;
+    padding: 40px 22px 24px;
   }
 
   .coaches__container {
@@ -278,11 +261,13 @@
   }
 
   .coaches__button-prev {
-    left: 15px;
+    left: 8px;
+    top: 11.5%;
   }
 
   .coaches__button-next {
-    right: 15px;
+    right: 8px;
+    top: 11.5%;
   }
 
   .coaches__container h2 {
@@ -308,5 +293,10 @@
 
   .coaches__img {
     height: 100%;
+  }
+
+  svg {
+    width: 10px;
+    height: 19px;
   }
 }

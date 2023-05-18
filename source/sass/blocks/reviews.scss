@@ -1,10 +1,10 @@
 .reviews {
   padding-top: 2px;
-  padding-bottom: 82px;
+  padding-bottom: 83px;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+  @media (max-width: ($vp-1200 - 1px)) {
     padding-top: 43px;
-    padding-bottom: 18px;
+    padding-bottom: 62px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
@@ -22,7 +22,7 @@
     text-align: center;
     padding-left: 4px;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
       transform: translateX(-4px);
       font-size: 42px;
       line-height: 50px;
@@ -42,7 +42,7 @@
   margin: 0 auto;
   padding: 37px;
 
-  @media (max-width: ($vp-1024 - 1px)) {
+  @media (max-width: ($vp-1200 - 1px)) {
     width: 100%;
     padding: 40px 80px;
   }
@@ -80,15 +80,21 @@
   svg {
     width: 26px;
     height: 32px;
+
+    @media (max-width: ($vp-768 - 1px)) {
+      width: 10px;
+      height: 19px;
+    }
   }
 
-  @media (max-width: ($vp-1024 - 1px)) {
+  @media (max-width: ($vp-1200 - 1px)) {
     top: -22px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
     width: 15px;
     height: 100%;
+    top: 0;
   }
 
   &--prev {
@@ -98,7 +104,7 @@
       transform: rotate(180deg);
     }
 
-    @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
       left: 40px;
     }
 
@@ -110,7 +116,7 @@
   &--next {
     right: 0;
 
-    @media (max-width: ($vp-1024 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
       right: 40px;
     }
 
