@@ -192,13 +192,9 @@
     // Hover&focus&active
     @include hover-focus {
       border: 7px solid transparent;
-      border-image: linear-gradient(151deg, #ed0233 17.6%, #003eb7 95.31%);
+      border-image: linear-gradient(151deg, $color-torch-red-darkest 17.6%, $color-cobalt 95.31%);
       border-image-slice: 7;
       outline: 0;
-    }
-
-    @include active {
-      opacity: 0.7;
     }
   }
 
@@ -299,8 +295,17 @@
     }
 
     @include hover-focus {
-      border: 2px solid #ed0233;
-      color: #ed0233;
+      background-image: linear-gradient(151deg, $color-torch-red-darkest 17.6%, $color-cobalt 95.31%);
+      border: 2px solid $color-default-white;
+      outline:none;
+      color: $color-default-white;
     }
+  }
+
+  &__item:hover .abonements__btn {
+    background-image: linear-gradient(151deg, $color-torch-red-darkest 17.6%, $color-cobalt 95.31%);
+    border: 2px solid $color-default-white;
+    outline:none;
+    color: $color-default-white;
   }
 }
