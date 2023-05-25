@@ -66,7 +66,9 @@
     justify-content: flex-start;
     flex-direction: column;
     background-color: $color-sapphire-transparent-strong;
-    min-height: 294px;
+    height: 294px;
+    overflow-y: scroll;
+    scrollbar-width: none;
   }
 
   &:hover .coaches__box h3,
@@ -87,7 +89,7 @@
 
 .coaches:hover .coaches__box::-webkit-scrollbar,
 .coaches__item:focus-visible .coaches__box::-webkit-scrollbar {
-  width: 4px;
+  width: 0;
 }
 
 .coaches__item:hover .coaches__box::-webkit-scrollbar-track,
@@ -190,6 +192,7 @@
   .coaches__item:focus-visible .coaches__box,
   .coaches__item:hover .coaches__box {
     padding-bottom: 0;
+    min-height: 294px;
   }
 
   .coaches__button-prev {
@@ -232,17 +235,14 @@
     top: 11%;
   }
 
-  .coaches__box {
-    height: 100%;
-  }
-
   .coaches__box h3 {
     padding-top: 91%;
   }
 
   .coaches__item:focus-visible .coaches__box,
   .coaches__item:hover .coaches__box {
-    height: 100%;
+    padding-bottom: 0;
+    min-height: 294px;
   }
 }
 
@@ -298,5 +298,10 @@
   svg {
     width: 10px;
     height: 19px;
+  }
+
+  .coaches__item:focus-visible .coaches__box,
+  .coaches__item:hover .coaches__box {
+    height: 100%;
   }
 }

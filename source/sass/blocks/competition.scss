@@ -23,7 +23,7 @@
     padding-left: 74px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: $color-torch-red;
+    background-color: $color-torch-red-darkest;
 
       @media (max-width: ($vp-1200 - 1px)) {
       padding-left: 53px;

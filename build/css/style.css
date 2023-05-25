@@ -601,6 +601,8 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: -34px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .header__nav a {
   display: block;
@@ -1292,13 +1294,15 @@ button,
   gap: 47px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   margin: 0 auto;
-  width: 342px;
+  max-width: 342px;
   padding: 0;
   padding-top: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .abonements__keys {
-    width: 332px;
+    max-width: 332px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1306,7 +1310,7 @@ button,
 }
 @media (max-width: 767px) {
   .abonements__keys {
-    width: 290px;
+    min-width: 290px;
     gap: 43px;
     padding: 12px 0 0;
   }
@@ -1766,7 +1770,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  background-color: #ff1553;
+  background-color: #ed0233;
 }
 @media (max-width: 1199px) {
   .competition__inner {
@@ -2121,7 +2125,9 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: rgba(16, 38, 84, 0.89);
-  min-height: 294px;
+  height: 294px;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 .coaches__item:hover .coaches__box h3, .coaches__item:focus-visible .coaches__box h3 {
   margin: 0;
@@ -2144,7 +2150,7 @@ button,
 
 .coaches:hover .coaches__box::-webkit-scrollbar,
 .coaches__item:focus-visible .coaches__box::-webkit-scrollbar {
-  width: 4px;
+  width: 0;
 }
 
 .coaches__item:hover .coaches__box::-webkit-scrollbar-track,
@@ -2254,6 +2260,7 @@ button,
   .coaches__item:focus-visible .coaches__box,
 .coaches__item:hover .coaches__box {
     padding-bottom: 0;
+    min-height: 294px;
   }
   .coaches__button-prev {
     left: 0;
@@ -2287,15 +2294,13 @@ button,
 .coaches__button-prev {
     top: 11%;
   }
-  .coaches__box {
-    height: 100%;
-  }
   .coaches__box h3 {
     padding-top: 91%;
   }
   .coaches__item:focus-visible .coaches__box,
 .coaches__item:hover .coaches__box {
-    height: 100%;
+    padding-bottom: 0;
+    min-height: 294px;
   }
 }
 @media (max-width: 767px) {
@@ -2340,6 +2345,10 @@ button,
   svg {
     width: 10px;
     height: 19px;
+  }
+  .coaches__item:focus-visible .coaches__box,
+.coaches__item:hover .coaches__box {
+    height: 100%;
   }
 }
 .advantages {

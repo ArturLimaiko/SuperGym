@@ -67,6 +67,7 @@
     }
   }
 
+
   &__keys {
     list-style-type: none;
     display: flex;
@@ -74,17 +75,18 @@
     gap: 47px;
     border-bottom: 2px solid $color-gray;
     margin: 0 auto;
-    width: 342px;
+    max-width: 342px;
     padding: 0;
     padding-top: 8px;
+    flex-wrap: wrap;
 
     @media (max-width: ($vp-1200 - 1px)) {
-      width: 332px;
+      max-width: 332px;
       justify-content: space-between;
     }
 
     @media (max-width: ($vp-768 - 1px)) {
-      width: 290px;
+      min-width: 290px;
       gap: 43px;
       padding: 12px 0 0;
     }
