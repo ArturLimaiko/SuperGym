@@ -1786,7 +1786,7 @@ button,
   }
 }
 
-.competition__image {
+.competition__img {
   -ms-grid-row-align: stretch;
   -ms-grid-column-align: stretch;
   place-self: stretch;
@@ -1794,7 +1794,7 @@ button,
   width: 100%;
   background-color: #102654;
 }
-.competition__image img {
+.competition__img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1802,7 +1802,7 @@ button,
   background-color: #102654;
 }
 @media (max-width: 767px) {
-  .competition__image {
+  .competition__img {
     min-height: 292px;
   }
 }
@@ -1870,6 +1870,7 @@ button,
   -webkit-transform: translateX(-3px);
       -ms-transform: translateX(-3px);
           transform: translateX(-3px);
+  margin-top: 3px;
 }
 @media (max-width: 1199px) {
   .competition__description h2 {
@@ -1878,6 +1879,11 @@ button,
     font-size: 48px;
     line-height: 46px;
     text-align: left;
+  }
+}
+@media (max-width: 1023px) {
+  .competition__description h2 {
+    margin-top: 12px;
   }
 }
 .competition__description p {
@@ -1889,10 +1895,21 @@ button,
   font-weight: 400;
   font-size: 18px;
   line-height: 2;
+  margin-bottom: 33px;
 }
 @media (max-width: 1199px) {
   .competition__description p {
     font-size: 12px;
+  }
+}
+@media (max-width: 1023px) {
+  .competition__description p {
+    margin-bottom: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .competition__description p {
+    margin-bottom: 18px;
   }
 }
 .competition__description dl {
@@ -1905,10 +1922,16 @@ button,
       -ms-transform: translateY(-5px);
           transform: translateY(-5px);
 }
+@media (max-width: 1023px) {
+  .competition__description dl {
+    -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+}
 .competition__description dt {
   position: relative;
   margin: 0;
-  margin-bottom: 3px;
   padding: 0;
   font-size: 18px;
   line-height: 27px;
@@ -1975,6 +1998,11 @@ button,
     margin-bottom: 5px;
   }
 }
+@media (max-width: 1023px) {
+  .competition__date {
+    margin-bottom: -4px;
+  }
+}
 .competition__date:last-of-type {
   margin-bottom: 0;
 }
@@ -1989,10 +2017,9 @@ button,
   text-transform: uppercase;
   -ms-grid-column-span: 2;
   grid-column: span 2;
-  margin-top: 36px;
   border: 4px solid #ffffff;
   background-color: transparent;
-  padding: 28px;
+  padding: 24px 27px 23px;
   -ms-grid-row-align: start;
   -ms-grid-column-align: center;
   place-self: start center;
@@ -2003,7 +2030,6 @@ button,
 }
 @media (max-width: 1199px) {
   .competition__button {
-    margin-top: 27px;
     padding: 15px;
     font-size: 10px;
     line-height: 12px;
@@ -2024,6 +2050,14 @@ button,
 .competition__button:active {
   opacity: 0.5;
 }
+@media (max-width: 1023px) {
+  .competition__button {
+    -webkit-transform: translateY(-8px);
+        -ms-transform: translateY(-8px);
+            transform: translateY(-8px);
+    padding: 12px 15px 12px;
+  }
+}
 @media (max-width: 767px) {
   .competition__button {
     font-size: 10px;
@@ -2032,6 +2066,9 @@ button,
     margin-top: 30px;
     border: 2px solid #ffffff;
     padding: 12px 18px;
+    -webkit-transform: translateY(-16px);
+        -ms-transform: translateY(-16px);
+            transform: translateY(-16px);
   }
 }
 
