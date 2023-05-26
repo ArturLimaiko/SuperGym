@@ -130,14 +130,16 @@
       &::before {
         position: absolute;
         content: "";
-        background: no-repeat url("/img/svg/900.svg");
+        background-image: url("../img/svg/900.svg");
+        background-repeat: no-repeat;
         width: 108px;
         height: 80px;
         top: 8px;
         left: 20px;
 
           @media (max-width: ($vp-1200 - 1px)) {
-          background: no-repeat url("/img/svg/900-tablet.svg");
+          background-image: url("../img/svg/900-tablet.svg");
+          background-repeat: no-repeat;
           width: 89px;
           height: 64px;
           top: 6px;
@@ -145,7 +147,8 @@
         }
 
         @media (max-width: ($vp-768 - 1px)) {
-          background: no-repeat url("/img/svg/900-mobile.svg");
+          background-image: url("../img/svg/900-mobile.svg");
+          background-repeat: no-repeat;
           top: 8px;
           left: 35%;
         }

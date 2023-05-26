@@ -1,5 +1,5 @@
 .coaches {
-  padding-top: 108px;
+  padding-top: 77px;
   padding-bottom: 139px;
 }
 
@@ -60,13 +60,13 @@
   width: 260px;
   min-height: 294px;
 
+
   &:hover .coaches__box,
   &:focus-visible .coaches__box {
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     background-color: $color-sapphire-transparent-strong;
-    height: 294px;
     overflow-y: scroll;
     scrollbar-width: none;
   }
@@ -123,6 +123,7 @@
   padding: 49px 42px 24px 42px;
   min-height: 294px;
   align-items: flex-end;
+  aspect-ratio: 1/1;
 }
 
 .coaches__box h3 {
@@ -206,7 +207,7 @@
 
 @media (max-width: ($vp-1024 - 1px)) {
   .coaches {
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 102px;
   }
 
@@ -249,7 +250,7 @@
 @media (max-width: ($vp-768 - 1px)) {
   .coaches {
     padding-bottom: 70px;
-    padding-top: 62px;
+    padding-top: 32px;
   }
 
   .coaches__box {

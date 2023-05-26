@@ -4,7 +4,7 @@
   padding-bottom: 119px;
   position: relative;
 
-    @media (max-width: ($vp-1200 - 1px)) {
+  @media (max-width: ($vp-1200 - 1px)) {
     padding-top: 101px;
     padding-bottom: 103px;
   }
@@ -23,10 +23,10 @@
       url("../img/disk-gym@2x.webp") 2x,
       url("../img/disk-gym@2x.png") 2x
     );
-    width: 286px;
+    width: 272px;
     height: 420px;
-    right: 0;
-    bottom: -76px;
+    right: 2px;
+    bottom: -134px;
     background-repeat: no-repeat;
     z-index: 0;
 
@@ -66,7 +66,6 @@
       line-height: 38px;
     }
   }
-
 
   &__keys {
     list-style-type: none;
@@ -281,6 +280,21 @@
   &__description {
     display: flex;
     flex-direction: column;
+
+    & svg {
+      font-family: $ff-roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 100px;
+      line-height: 150%;
+      width: 30px;
+      height: 42px;
+
+      @media (max-width: ($vp-768 - 1px)) {
+        width: 24px;
+        height: 33px;
+      }
+    }
   }
 
   &__btn {
@@ -294,12 +308,13 @@
 
     @media (max-width: ($vp-768 - 1px)) {
       margin-top: 31px;
+      padding: 24px 42px 24px 43px;
     }
 
     @include hover-focus {
       background-image: linear-gradient(151deg, $color-torch-red-darkest 17.6%, $color-cobalt 95.31%);
       border: 2px solid $color-default-white;
-      outline:none;
+      outline: none;
       color: $color-default-white;
     }
   }
@@ -307,7 +322,7 @@
   &__item:hover .abonements__btn {
     background-image: linear-gradient(151deg, $color-torch-red-darkest 17.6%, $color-cobalt 95.31%);
     border: 2px solid $color-default-white;
-    outline:none;
+    outline: none;
     color: $color-default-white;
   }
 }

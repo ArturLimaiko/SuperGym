@@ -132,6 +132,7 @@
   a {
     display: block;
     width: max-content;
+    color:$color-sapphire;
 
     @include hover-focus {
       color: $color-crimson;
