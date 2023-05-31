@@ -247,6 +247,7 @@
 
     @media (max-width: ($vp-375 - 1px)) {
       height: 299px;
+      object-fit: inherit;
     }
   }
 }
