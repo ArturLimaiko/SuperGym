@@ -70,7 +70,7 @@
   &__keys {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 47px;
     border-bottom: 2px solid $color-gray;
     margin: 0 auto;

@@ -3,7 +3,7 @@
   padding-top: 98px;
   padding-bottom: 135px;
 
-    @media (max-width: ($vp-1200 - 1px)) {
+  @media (max-width: ($vp-1200 - 1px)) {
     padding-top: 91px;
     padding-bottom: 94px;
   }
@@ -27,7 +27,7 @@
     text-align: center;
     padding-left: 10px;
 
-      @media (max-width: ($vp-1200 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
       font-size: 42px;
       line-height: 50px;
       padding: 0;
@@ -51,7 +51,7 @@
     padding: 0;
     list-style-type: none;
 
-      @media (max-width: ($vp-1200 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
       grid-template-columns: 1fr 1fr;
       width: 675px;
     }
@@ -69,7 +69,7 @@
     justify-content: flex-end;
     min-height: 155px;
 
-      @media (max-width: ($vp-1200 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
       min-height: 100px;
     }
 
@@ -91,7 +91,7 @@
       line-height: 33px;
       margin: 0;
 
-        @media (max-width: ($vp-1200 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
         font-size: 20px;
         line-height: 30px;
       }
@@ -108,7 +108,7 @@
       padding: 5px 5px 0 0;
       color: $color-sapphire;
 
-        @media (max-width: ($vp-1200 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
         padding: 2px 5px 0 0;
       }
 
@@ -137,9 +137,8 @@
         top: 8px;
         left: 20px;
 
-          @media (max-width: ($vp-1200 - 1px)) {
+        @media (max-width: ($vp-1200 - 1px)) {
           background-image: url("../img/svg/900-tablet.svg");
-          background-repeat: no-repeat;
           width: 89px;
           height: 64px;
           top: 6px;
@@ -148,7 +147,6 @@
 
         @media (max-width: ($vp-768 - 1px)) {
           background-image: url("../img/svg/900-mobile.svg");
-          background-repeat: no-repeat;
           top: 8px;
           left: 35%;
         }
@@ -160,7 +158,7 @@
       grid-column: 1/1;
       border-top: 2px solid $color-crimson-light;
 
-        @media (max-width: ($vp-1200 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
         border: none;
       }
 
@@ -173,14 +171,15 @@
       &::before {
         position: absolute;
         content: "";
-        background: no-repeat url("/img/svg/350place.svg");
+        background-image: url("/img/svg/350place.svg");
+        background-repeat: no-repeat;
         width: 108px;
         height: 80px;
         top: 80px;
         left: 19px;
 
-          @media (max-width: ($vp-1200 - 1px)) {
-          background: no-repeat url("/img/svg/350place-tablet.svg");
+        @media (max-width: ($vp-1200 - 1px)) {
+          background-image: url("/img/svg/350place-tablet.svg");
           width: 89px;
           height: 64px;
           top: 45px;
@@ -188,7 +187,7 @@
         }
 
         @media (max-width: ($vp-768 - 1px)) {
-          background: no-repeat url("/img/svg/350place-mobile.svg");
+          background-image: url("/img/svg/350place-mobile.svg");
           top: 47px;
           left: 101px;
         }
@@ -202,7 +201,7 @@
       text-align: center;
       margin: 11px auto 5px;
 
-        @media (max-width: ($vp-1200 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
         grid-row: 2/2;
         grid-column: 1/3;
         width: 100%;
@@ -224,7 +223,7 @@
         color: $color-default-white;
         height: 49px;
 
-          @media (max-width: ($vp-1200 - 1px)) {
+        @media (max-width: ($vp-1200 - 1px)) {
           height: 100%;
           margin-top: -8px;
           margin-left: -8px;
@@ -237,7 +236,7 @@
         line-height: 39px;
         color: $color-default-white;
 
-          @media (max-width: ($vp-1200 - 1px)) {
+        @media (max-width: ($vp-1200 - 1px)) {
           font-size: 22px;
           line-height: 33px;
           margin-top: -19px;
@@ -255,7 +254,7 @@
       grid-row: 1/2;
       margin-bottom: 8px;
 
-        @media (max-width: ($vp-1200 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
         grid-column: 2/2;
       }
 
@@ -269,14 +268,15 @@
       &::before {
         position: absolute;
         content: "";
-        background: no-repeat url("/img/svg/70cars.svg");
+        background-image: url("/img/svg/70cars.svg");
+        background-repeat: no-repeat;
         width: 108px;
         height: 80px;
         top: 7px;
         left: 8px;
 
-          @media (max-width: ($vp-1200 - 1px)) {
-          background: no-repeat url("/img/svg/70cars-tablet.svg");
+        @media (max-width: ($vp-1200 - 1px)) {
+          background-image: url("/img/svg/70cars-tablet.svg");
           width: 59px;
           height: 64px;
           top: 6px;
@@ -284,7 +284,7 @@
         }
 
         @media (max-width: ($vp-768 - 1px)) {
-          background: no-repeat url("/img/svg/70cars-mobile.svg");
+          background-image: url("/img/svg/70cars-mobile.svg");
           top: 33px;
           left: 116px;
         }
@@ -297,7 +297,7 @@
       grid-column: 3/3;
       border-top: 2px solid $color-crimson-light;
 
-        @media (max-width: ($vp-1200 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
         grid-row: 3/3;
         grid-column: 2/2;
         border: none;
@@ -313,14 +313,15 @@
       &::before {
         position: absolute;
         content: "";
-        background: no-repeat url("/img/svg/5+.svg");
+        background-image: url("/img/svg/5+.svg");
+        background-repeat: no-repeat;
         width: 108px;
         height: 80px;
         top: 82px;
         left: 8px;
 
-          @media (max-width: ($vp-1200 - 1px)) {
-          background: no-repeat url("/img/svg/5+tablet.svg");
+        @media (max-width: ($vp-1200 - 1px)) {
+          background-image: url("/img/svg/5+tablet.svg");
           width: 59px;
           height: 64px;
           top: 44px;
@@ -328,7 +329,7 @@
         }
 
         @media (max-width: ($vp-768 - 1px)) {
-          background: no-repeat url("/img/svg/5+mobile.svg");
+          background-image: url("/img/svg/5+mobile.svg");
           top: 8px;
           left: 116px;
         }
@@ -343,7 +344,7 @@
       padding-left: 50px;
       padding-top: 4px;
 
-        @media (max-width: ($vp-1200 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
         padding-left: 19px;
         padding-top: 0;
         padding-right: 29px;
@@ -358,7 +359,7 @@
       padding-top: 76px;
       padding-left: 51px;
 
-        @media (max-width: ($vp-1200 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
         padding-top: 37px;
         padding-left: 19px;
       }
@@ -373,7 +374,7 @@
       padding-top: 4px;
       padding-left: 3px;
 
-        @media (max-width: ($vp-1200 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
         padding-top: 0;
         padding-left: 5px;
       }
@@ -389,7 +390,7 @@
       padding-top: 75px;
       padding-left: 3px;
 
-        @media (max-width: ($vp-1200 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
         padding-top: 37px;
         padding-left: 5px;
       }
@@ -405,7 +406,7 @@
     background-color: $color-resolution-blue;
     padding: 37px 30px 30px 33px;
 
-      @media (max-width: ($vp-1200 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
       padding: 21px 132px;
       display: flex;
       flex-direction: column;
@@ -420,7 +421,7 @@
   &__description {
     padding-top: 27px;
 
-      @media (max-width: ($vp-1200 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
       padding: 0;
       max-width: 178px;
       padding-top: 12px;
@@ -439,7 +440,7 @@
       line-height: 24px;
       color: $color-default-white;
 
-        @media (max-width: ($vp-1200 - 1px)) {
+      @media (max-width: ($vp-1200 - 1px)) {
         margin: 0;
       }
     }
