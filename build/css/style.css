@@ -2135,7 +2135,6 @@ button,
   .competition__button {
     font-size: 10px;
     line-height: 12px;
-    padding: 12px 51px;
     margin-top: 30px;
     border: 2px solid #ffffff;
     padding: 12px 18px;
@@ -2449,9 +2448,6 @@ button,
     min-height: 274px;
     height: 85.5vw;
   }
-  .coaches__box {
-    height: 100%;
-  }
   .coaches__text li {
     padding-left: 26px;
   }
@@ -2573,7 +2569,6 @@ button,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    flex-direction: column;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -2605,7 +2600,6 @@ button,
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  padding: 0;
   margin: 0;
   padding: 5px 5px 0 0;
   color: #102654;
@@ -2681,7 +2675,7 @@ button,
 .advantages__item--two::before {
   position: absolute;
   content: "";
-  background-image: url("/img/svg/350place.svg");
+  background-image: url("../img/svg/350place.svg");
   background-repeat: no-repeat;
   width: 108px;
   height: 80px;
@@ -2690,7 +2684,7 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages__item--two::before {
-    background-image: url("/img/svg/350place-tablet.svg");
+    background-image: url("../img/svg/350place-tablet.svg");
     width: 89px;
     height: 64px;
     top: 45px;
@@ -2699,7 +2693,7 @@ button,
 }
 @media (max-width: 767px) {
   .advantages__item--two::before {
-    background-image: url("/img/svg/350place-mobile.svg");
+    background-image: url("../img/svg/350place-mobile.svg");
     top: 47px;
     left: 101px;
   }
@@ -2803,7 +2797,7 @@ button,
 .advantages__item--fourth::before {
   position: absolute;
   content: "";
-  background-image: url("/img/svg/70cars.svg");
+  background-image: url("../img/svg/70cars.svg");
   background-repeat: no-repeat;
   width: 108px;
   height: 80px;
@@ -2812,7 +2806,7 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages__item--fourth::before {
-    background-image: url("/img/svg/70cars-tablet.svg");
+    background-image: url("../img/svg/70cars-tablet.svg");
     width: 59px;
     height: 64px;
     top: 6px;
@@ -2821,7 +2815,7 @@ button,
 }
 @media (max-width: 767px) {
   .advantages__item--fourth::before {
-    background-image: url("/img/svg/70cars-mobile.svg");
+    background-image: url("../img/svg/70cars-mobile.svg");
     top: 33px;
     left: 116px;
   }
@@ -2856,7 +2850,7 @@ button,
 .advantages__item--five::before {
   position: absolute;
   content: "";
-  background-image: url("/img/svg/5+.svg");
+  background-image: url("../img/svg/5+.svg");
   background-repeat: no-repeat;
   width: 108px;
   height: 80px;
@@ -2865,7 +2859,7 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages__item--five::before {
-    background-image: url("/img/svg/5+tablet.svg");
+    background-image: url("../img/svg/5+tablet.svg");
     width: 59px;
     height: 64px;
     top: 44px;
@@ -2874,7 +2868,7 @@ button,
 }
 @media (max-width: 767px) {
   .advantages__item--five::before {
-    background-image: url("/img/svg/5+mobile.svg");
+    background-image: url("../img/svg/5+mobile.svg");
     top: 8px;
     left: 116px;
   }
@@ -2911,7 +2905,7 @@ button,
 @media (max-width: 767px) {
   .advantages__box--two {
     padding-top: 123px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 .advantages__box--fourth {
@@ -4099,14 +4093,14 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
-  max-width: 650px;
+  max-width: 431px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .footer__list {
     gap: 30px;
-    max-width: 400px;
+    max-width: 393px;
   }
 }
 @media (max-width: 767px) {

@@ -60,7 +60,6 @@
   width: 260px;
   min-height: 294px;
 
-
   &:hover .coaches__box,
   &:focus-visible .coaches__box {
     align-items: center;
@@ -282,10 +281,6 @@
     max-width: 100%;
     min-height: 274px;
     height: 85.5vw;
-  }
-
-  .coaches__box {
-    height: 100%;
   }
 
   .coaches__text li {

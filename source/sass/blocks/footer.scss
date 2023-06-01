@@ -42,12 +42,12 @@
     margin: 0;
     display: flex;
     gap: 40px;
-    max-width: 650px;
+    max-width: 431px;
     flex-wrap: wrap;
 
     @media (max-width: ($vp-1200 - 1px)) {
       gap: 30px;
-      max-width: 400px;
+      max-width: 393px;
     }
 
     @media (max-width: ($vp-768 - 1px)) {

@@ -78,7 +78,6 @@
       flex-direction: column;
       flex-wrap: wrap;
       align-items: center;
-      flex-direction: column;
       align-self: center;
       text-align: center;
     }
@@ -103,7 +102,6 @@
       font-weight: 300;
       font-size: 16px;
       line-height: 22px;
-      padding: 0;
       margin: 0;
       padding: 5px 5px 0 0;
       color: $color-sapphire;
@@ -171,7 +169,7 @@
       &::before {
         position: absolute;
         content: "";
-        background-image: url("/img/svg/350place.svg");
+        background-image: url("../img/svg/350place.svg");
         background-repeat: no-repeat;
         width: 108px;
         height: 80px;
@@ -179,7 +177,7 @@
         left: 19px;
 
         @media (max-width: ($vp-1200 - 1px)) {
-          background-image: url("/img/svg/350place-tablet.svg");
+          background-image: url("../img/svg/350place-tablet.svg");
           width: 89px;
           height: 64px;
           top: 45px;
@@ -187,7 +185,7 @@
         }
 
         @media (max-width: ($vp-768 - 1px)) {
-          background-image: url("/img/svg/350place-mobile.svg");
+          background-image: url("../img/svg/350place-mobile.svg");
           top: 47px;
           left: 101px;
         }
@@ -268,7 +266,7 @@
       &::before {
         position: absolute;
         content: "";
-        background-image: url("/img/svg/70cars.svg");
+        background-image: url("../img/svg/70cars.svg");
         background-repeat: no-repeat;
         width: 108px;
         height: 80px;
@@ -276,7 +274,7 @@
         left: 8px;
 
         @media (max-width: ($vp-1200 - 1px)) {
-          background-image: url("/img/svg/70cars-tablet.svg");
+          background-image: url("../img/svg/70cars-tablet.svg");
           width: 59px;
           height: 64px;
           top: 6px;
@@ -284,7 +282,7 @@
         }
 
         @media (max-width: ($vp-768 - 1px)) {
-          background-image: url("/img/svg/70cars-mobile.svg");
+          background-image: url("../img/svg/70cars-mobile.svg");
           top: 33px;
           left: 116px;
         }
@@ -313,7 +311,7 @@
       &::before {
         position: absolute;
         content: "";
-        background-image: url("/img/svg/5+.svg");
+        background-image: url("../img/svg/5+.svg");
         background-repeat: no-repeat;
         width: 108px;
         height: 80px;
@@ -321,7 +319,7 @@
         left: 8px;
 
         @media (max-width: ($vp-1200 - 1px)) {
-          background-image: url("/img/svg/5+tablet.svg");
+          background-image: url("../img/svg/5+tablet.svg");
           width: 59px;
           height: 64px;
           top: 44px;
@@ -329,7 +327,7 @@
         }
 
         @media (max-width: ($vp-768 - 1px)) {
-          background-image: url("/img/svg/5+mobile.svg");
+          background-image: url("../img/svg/5+mobile.svg");
           top: 8px;
           left: 116px;
         }
@@ -366,7 +364,7 @@
 
       @media (max-width: ($vp-768 - 1px)) {
         padding-top: 123px;
-        padding-left: 0px;
+        padding-left: 0;
       }
     }
 

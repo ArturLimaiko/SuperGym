@@ -21,7 +21,7 @@
     background-color: $color-light-slay-grey;
   }
 
-    @media (max-width: ($vp-1200 - 1px)) {
+  @media (max-width: ($vp-1200 - 1px)) {
     background: transparent;
 
     &::after {
@@ -33,7 +33,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-      @media (max-width: ($vp-1200 - 1px)) {
+    @media (max-width: ($vp-1200 - 1px)) {
       padding: 0;
       grid-template-columns: 1fr;
     }
